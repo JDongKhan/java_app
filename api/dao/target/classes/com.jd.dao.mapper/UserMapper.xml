@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jd.dao.mapper.UserMapper">
     <!-- 自定义返回结果集 -->
-    <resultMap id="userMap" type="com.jd.dao.beans.UserBean">
+    <resultMap id="userMap" type="com.jd.dao.beans.User">
         <id property="user_id" column="user_id" javaType="java.lang.Integer"></id>
         <result property="user_name" column="user_name" javaType="java.lang.String"></result>
         <result property="user_password" column="user_password" javaType="java.lang.String"></result>
@@ -50,7 +50,7 @@
         </if>
     </select>
 
-    <update id="updateUser" parameterType="com.jd.dao.beans.UserBean">
+    <update id="updateUser" parameterType="com.jd.dao.beans.User">
 
         update t_user
         <set>

@@ -1,6 +1,11 @@
 package com.jd.app.controller;
+import com.jd.app.service.ICategoryService;
+import com.jd.app.service.IGoodsService;
+import com.jd.app.service.IRecommendService;
 import com.jd.core.annotation.NotLogin;
 import com.jd.core.annotation.UserId;
+import com.jd.dao.beans.Category;
+import com.jd.dao.beans.Recommend;
 import com.jd.dao.beans.User;
 import com.jd.core.utils.ResponseUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -11,7 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,17 +31,23 @@ import java.util.Map;
 @Validated
 public class IndexController {
 
+    @Resource
+    IRecommendService recommendService;
+    @Resource
+    IGoodsService goodsService;
+    @Resource
+    ICategoryService categoryService;
+
     //列表
     @RequestMapping(value = "/list")
     @ResponseBody
     @NotLogin
-    public Map list(@UserId Integer user_id){
+    public Map list(@NotNull Integer user_id) throws Exception {
+        List<Recommend> list = recommendService.queryRecommend(user_id);
+        List<Category> categoryList = categoryService.queryL1Category();
         Map map = new HashMap();
-        List list = new ArrayList();
-        for (int i = 0; i < 100; i++) {
-            list.add("string " + i);
-        }
-        map.put("items",list);
+        map.put("recommends",list);
+        map.put("categorys",categoryList);
         return ResponseUtil.ok(map);
     }
 

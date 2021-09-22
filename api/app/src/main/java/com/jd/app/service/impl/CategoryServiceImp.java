@@ -12,16 +12,16 @@ import java.util.List;
 public class CategoryServiceImp implements ICategoryService {
 
     @Resource
-    private CategoryMapper um;
+    private CategoryMapper mapper;
 
 
     @Override
     public List<Category> queryL1Category() throws Exception {
-        return um.queryL1Category();
+        return mapper.queryL1Category();
     }
 
     @Override
     public List<Category> queryCategoryByPid(Integer pid) throws Exception {
-        return um.queryCategoryByPid(pid);
+        return mapper.queryCategoryByPid(pid);
     }
 }

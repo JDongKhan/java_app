@@ -11,11 +11,11 @@ import java.util.List;
 @Service
 public class GoodsServiceImpl implements IGoodsService {
     @Resource
-    private GoodsMapper um;
+    private GoodsMapper mapper;
 
 
     @Override
     public List<Good> queryGoodsByCategoryId(Integer category_id) throws Exception {
-        return um.queryGoodsByCategoryId(category_id);
+        return mapper.queryGoodsByCategoryId(category_id);
     }
 }

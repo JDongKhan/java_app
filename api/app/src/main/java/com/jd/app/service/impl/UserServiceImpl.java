@@ -15,42 +15,42 @@ import java.util.List;
 public class UserServiceImpl implements IUserService {
 
     @Resource
-    private UserMapper um;
+    private UserMapper mapper;
 
 
     public User login(String userAccount, String password)throws Exception {
-        return um.login(userAccount, password);
+        return mapper.login(userAccount, password);
     }
 
     @Override
     @Transactional(rollbackFor = Exception.class)
     public int registerAccount(User user) throws Exception {
-        return um.insertUser(user);
+        return mapper.insertUser(user);
     }
 
     @Override
     public int updateUser(User user) throws Exception {
-        return um.updateUser(user);
+        return mapper.updateUser(user);
     }
 
     @Override
     public User queryUserByAccount(String userAccount) throws Exception {
-        return um.queryByAccount(userAccount);
+        return mapper.queryByAccount(userAccount);
     }
 
     @Override
     public User queryUserByID(int user_id) throws Exception {
-        return um.queryUserById(user_id);
+        return mapper.queryUserById(user_id);
     }
 
     @Override
     public List<User> queryAllUser() throws Exception {
-        return um.queryAllUser();
+        return mapper.queryAllUser();
     }
 
     @Override
     public int deleteUser(int user_id) throws Exception {
-        return um.deleteUser(user_id);
+        return mapper.deleteUser(user_id);
     }
 
 

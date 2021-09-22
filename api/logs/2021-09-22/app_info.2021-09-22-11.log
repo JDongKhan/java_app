@@ -1,0 +1,12 @@
+2021-09-22 11:37:26,095 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.5.Final
+2021-09-22 11:37:26,195 INFO [main][StartupInfoLogger.java:55] - Starting DemoApplication on JDdeMacBook-Pro.local with PID 17260 (/Users/jd/Documents/GitHub/java_app/api/app/target/classes started by jd in /Users/jd/Documents/GitHub/java_app/api)
+2021-09-22 11:37:26,200 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
+2021-09-22 11:37:28,181 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 8080 (http)
+2021-09-22 11:37:28,198 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-22 11:37:28,199 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2021-09-22 11:37:28,200 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-09-22 11:37:28,406 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2021-09-22 11:37:28,406 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 2107 ms
+2021-09-22 11:37:29,452 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-22 11:37:29,521 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 8080 (http) with context path '/app'
+2021-09-22 11:37:29,547 INFO [main][StartupInfoLogger.java:61] - Started DemoApplication in 3.929 seconds (JVM running for 6.2)
