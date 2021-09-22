@@ -2,6 +2,34 @@
 
 
 
+
+
+**api**
+
+workspace， pom里面依赖一些第三方通用jar
+
+
+
+**core**
+
+提供工程配置、通用工具
+
+
+
+**dao**
+
+用于操作数据库
+
+
+
+**app**
+
+包装接口提供给外部
+
+
+
+
+
 这是一个提供给app API的一个java服务，使用spring boot + mybatis 开发。
 
 

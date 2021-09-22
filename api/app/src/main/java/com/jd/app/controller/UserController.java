@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.jd.app.service.IUserService;
 import com.jd.dao.beans.UserBean;
-import com.jd.app.utils.StringUtils;
+import com.jd.core.utils.StringUtils;
 import com.jd.core.utils.ResponseUtil;
 import lombok.extern.slf4j.Slf4j;
 

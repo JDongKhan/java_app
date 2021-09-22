@@ -22,8 +22,6 @@ import javax.servlet.http.HttpSession;
 @Slf4j
 public class LogFilter implements Filter {
 
-    String NO_LOGIN = "您还未登录";
-
     public void destroy() {
 
     }
