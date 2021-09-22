@@ -1,9 +1,13 @@
 package com.jd.dao.beans;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Recommend {
     private Integer id;
+    @JsonIgnore
     private Integer user_id;
     private User user;
+    @JsonIgnore
     private Integer good_id;
     private Good good;
 
