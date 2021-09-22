@@ -1,0 +1,75 @@
+2021-09-22 11:19:19,883 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.5.Final
+2021-09-22 11:19:20,191 INFO [main][StartupInfoLogger.java:55] - Starting DemoApplication on JDdeMacBook-Pro.local with PID 16494 (/Users/jd/Documents/GitHub/java_app/api/app/target/classes started by jd in /Users/jd/Documents/GitHub/java_app/api)
+2021-09-22 11:19:20,196 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
+2021-09-22 11:19:22,914 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 8080 (http)
+2021-09-22 11:19:22,936 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-22 11:19:22,937 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2021-09-22 11:19:22,937 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-09-22 11:19:23,192 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2021-09-22 11:19:23,193 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 2888 ms
+2021-09-22 11:19:24,295 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-22 11:19:24,346 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 8080 (http) with context path '/app'
+2021-09-22 11:19:24,363 INFO [main][StartupInfoLogger.java:61] - Started DemoApplication in 5.261 seconds (JVM running for 8.522)
+2021-09-22 11:19:36,331 INFO [http-nio-8080-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-22 11:19:36,331 INFO [http-nio-8080-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2021-09-22 11:19:36,341 INFO [http-nio-8080-exec-1][FrameworkServlet.java:547] - Completed initialization in 9 ms
+2021-09-22 11:19:39,783 INFO [http-nio-8080-exec-1][LogFilter.java:37] - 请求地址:/user/update
+2021-09-22 11:19:49,549 INFO [http-nio-8080-exec-2][LogFilter.java:37] - 请求地址:/user/login
+2021-09-22 11:19:49,850 INFO [http-nio-8080-exec-2][UserController.java:42] - user_account = admin; user_password = 123456
+2021-09-22 11:19:49,882 ERROR [http-nio-8080-exec-2][UserController.java:47] - Result Maps collection does not contain value for com.jd.dao.mapper.LogMapper.logMap
+2021-09-22 11:24:27,778 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.5.Final
+2021-09-22 11:24:28,018 INFO [main][StartupInfoLogger.java:55] - Starting DemoApplication on JDdeMacBook-Pro.local with PID 16704 (/Users/jd/Documents/GitHub/java_app/api/app/target/classes started by jd in /Users/jd/Documents/GitHub/java_app/api)
+2021-09-22 11:24:28,023 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
+2021-09-22 11:24:30,293 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 8080 (http)
+2021-09-22 11:24:30,309 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-22 11:24:30,310 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2021-09-22 11:24:30,310 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-09-22 11:24:30,533 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2021-09-22 11:24:30,533 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 2364 ms
+2021-09-22 11:24:31,628 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-22 11:24:31,693 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 8080 (http) with context path '/app'
+2021-09-22 11:24:31,727 INFO [main][StartupInfoLogger.java:61] - Started DemoApplication in 4.465 seconds (JVM running for 7.217)
+2021-09-22 11:24:40,304 INFO [http-nio-8080-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-22 11:24:40,305 INFO [http-nio-8080-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2021-09-22 11:24:40,319 INFO [http-nio-8080-exec-1][FrameworkServlet.java:547] - Completed initialization in 14 ms
+2021-09-22 11:24:40,332 INFO [http-nio-8080-exec-1][LogFilter.java:37] - 请求地址:/user/login
+2021-09-22 11:24:40,577 INFO [http-nio-8080-exec-1][UserController.java:42] - user_account = admin; user_password = 123456
+2021-09-22 11:24:40,594 ERROR [http-nio-8080-exec-1][UserController.java:47] - Result Maps collection does not contain value for com.jd.dao.mapper.UserMapper.userMap
+2021-09-22 11:25:25,739 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.5.Final
+2021-09-22 11:25:25,864 INFO [main][StartupInfoLogger.java:55] - Starting DemoApplication on JDdeMacBook-Pro.local with PID 16713 (/Users/jd/Documents/GitHub/java_app/api/app/target/classes started by jd in /Users/jd/Documents/GitHub/java_app/api)
+2021-09-22 11:25:25,869 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
+2021-09-22 11:25:27,554 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 8080 (http)
+2021-09-22 11:25:27,568 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-22 11:25:27,569 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2021-09-22 11:25:27,569 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-09-22 11:25:27,758 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2021-09-22 11:25:27,758 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1790 ms
+2021-09-22 11:25:28,614 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-22 11:25:28,664 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 8080 (http) with context path '/app'
+2021-09-22 11:25:28,680 INFO [main][StartupInfoLogger.java:61] - Started DemoApplication in 3.344 seconds (JVM running for 5.185)
+2021-09-22 11:25:41,932 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.5.Final
+2021-09-22 11:25:42,104 INFO [main][StartupInfoLogger.java:55] - Starting DemoApplication on JDdeMacBook-Pro.local with PID 16718 (/Users/jd/Documents/GitHub/java_app/api/app/target/classes started by jd in /Users/jd/Documents/GitHub/java_app/api)
+2021-09-22 11:25:42,109 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
+2021-09-22 11:25:44,345 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 8080 (http)
+2021-09-22 11:25:44,357 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-22 11:25:44,357 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2021-09-22 11:25:44,358 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-09-22 11:25:44,567 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2021-09-22 11:25:44,567 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 2324 ms
+2021-09-22 11:25:45,568 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-22 11:25:45,624 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 8080 (http) with context path '/app'
+2021-09-22 11:25:45,664 INFO [main][StartupInfoLogger.java:61] - Started DemoApplication in 4.156 seconds (JVM running for 5.924)
+2021-09-22 11:25:50,382 INFO [http-nio-8080-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-22 11:25:50,382 INFO [http-nio-8080-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2021-09-22 11:25:50,397 INFO [http-nio-8080-exec-1][FrameworkServlet.java:547] - Completed initialization in 15 ms
+2021-09-22 11:25:50,407 INFO [http-nio-8080-exec-1][LogFilter.java:37] - 请求地址:/user/login
+2021-09-22 11:25:50,658 INFO [http-nio-8080-exec-1][UserController.java:42] - user_account = admin; user_password = 123456
+2021-09-22 11:25:50,712 INFO [http-nio-8080-exec-1][HikariDataSource.java:110] - HikariPool-1 - Starting...
+2021-09-22 11:25:51,103 INFO [http-nio-8080-exec-1][HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2021-09-22 11:25:51,115 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_user where user_account=? and user_password=?
+2021-09-22 11:25:51,167 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: admin(String), 123456(String)
+2021-09-22 11:25:51,254 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
+2021-09-22 11:25:51,264 INFO [http-nio-8080-exec-1][UserController.java:52] - UserBean [user_account=admin, user_id=1, user_password=123456, user_name=admin ,user_flag=0]
+2021-09-22 11:25:51,357 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: update t_user SET `last_login_time` = ? where user_id = ?
+2021-09-22 11:25:51,361 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 2021-09-22T11:25:51.303(LocalDateTime), null
+2021-09-22 11:25:51,363 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==    Updates: 0

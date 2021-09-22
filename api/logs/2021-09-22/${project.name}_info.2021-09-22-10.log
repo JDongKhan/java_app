@@ -1,0 +1,89 @@
+2021-09-22 10:04:09,932 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.5.Final
+2021-09-22 10:04:10,038 INFO [main][StartupInfoLogger.java:55] - Starting DemoApplication on JDdeMacBook-Pro.local with PID 15590 (/Users/jd/Documents/GitHub/java_app/api/app/target/classes started by jd in /Users/jd/Documents/GitHub/java_app/api)
+2021-09-22 10:04:10,043 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
+2021-09-22 10:04:11,728 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 8080 (http)
+2021-09-22 10:04:11,739 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-22 10:04:11,740 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2021-09-22 10:04:11,740 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-09-22 10:04:11,910 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2021-09-22 10:04:11,910 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1737 ms
+2021-09-22 10:04:12,954 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-22 10:04:12,999 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 8080 (http) with context path '/app'
+2021-09-22 10:04:13,016 INFO [main][StartupInfoLogger.java:61] - Started DemoApplication in 3.497 seconds (JVM running for 5.645)
+2021-09-22 10:04:39,933 INFO [http-nio-8080-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-22 10:04:39,934 INFO [http-nio-8080-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2021-09-22 10:04:39,949 INFO [http-nio-8080-exec-1][FrameworkServlet.java:547] - Completed initialization in 15 ms
+2021-09-22 10:04:40,148 INFO [http-nio-8080-exec-1][HikariDataSource.java:110] - HikariPool-1 - Starting...
+2021-09-22 10:04:40,523 INFO [http-nio-8080-exec-1][HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2021-09-22 10:04:40,537 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where level='L1'
+2021-09-22 10:04:40,582 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 
+2021-09-22 10:04:40,686 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 13
+2021-09-22 10:04:40,699 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,701 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001001(Integer)
+2021-09-22 10:04:40,717 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 12
+2021-09-22 10:04:40,718 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,719 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001002(Integer)
+2021-09-22 10:04:40,722 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 5
+2021-09-22 10:04:40,723 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,724 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001003(Integer)
+2021-09-22 10:04:40,726 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 7
+2021-09-22 10:04:40,733 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,735 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001004(Integer)
+2021-09-22 10:04:40,738 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 6
+2021-09-22 10:04:40,739 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,739 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001006(Integer)
+2021-09-22 10:04:40,741 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 5
+2021-09-22 10:04:40,742 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,743 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001007(Integer)
+2021-09-22 10:04:40,747 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 4
+2021-09-22 10:04:40,748 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,749 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001008(Integer)
+2021-09-22 10:04:40,752 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 4
+2021-09-22 10:04:40,753 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,754 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001009(Integer)
+2021-09-22 10:04:40,755 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 6
+2021-09-22 10:04:40,756 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,757 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001010(Integer)
+2021-09-22 10:04:40,759 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 7
+2021-09-22 10:04:40,760 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,762 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001011(Integer)
+2021-09-22 10:04:40,766 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 7
+2021-09-22 10:04:40,767 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,768 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001012(Integer)
+2021-09-22 10:04:40,769 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 0
+2021-09-22 10:04:40,770 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,771 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001013(Integer)
+2021-09-22 10:04:40,772 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 4
+2021-09-22 10:04:40,773 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_category where pid=?
+2021-09-22 10:04:40,774 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1001021(Integer)
+2021-09-22 10:04:40,775 DEBUG [http-nio-8080-exec-1][BaseJdbcLogger.java:137] - <==      Total: 0
+2021-09-22 10:04:45,119 INFO [http-nio-8080-exec-3][UserController.java:42] - user_account = admin; user_password = 123456
+2021-09-22 10:04:45,135 DEBUG [http-nio-8080-exec-3][BaseJdbcLogger.java:137] - ==>  Preparing: select * from t_user where user_account=? and user_password=?
+2021-09-22 10:04:45,135 DEBUG [http-nio-8080-exec-3][BaseJdbcLogger.java:137] - ==> Parameters: admin(String), 123456(String)
+2021-09-22 10:04:45,141 DEBUG [http-nio-8080-exec-3][BaseJdbcLogger.java:137] - <==      Total: 1
+2021-09-22 10:04:45,141 INFO [http-nio-8080-exec-3][UserController.java:52] - UserBean [user_account=admin, user_id=1, user_password=123456, user_name=admin ,user_flag=0]
+2021-09-22 10:04:45,206 DEBUG [http-nio-8080-exec-3][BaseJdbcLogger.java:137] - ==>  Preparing: update t_user SET `last_login_time` = ? where user_id = ?
+2021-09-22 10:04:45,208 DEBUG [http-nio-8080-exec-3][BaseJdbcLogger.java:137] - ==> Parameters: 2021-09-22T10:04:45.168(LocalDateTime), null
+2021-09-22 10:04:45,214 DEBUG [http-nio-8080-exec-3][BaseJdbcLogger.java:137] - <==    Updates: 0
+2021-09-22 10:05:47,199 INFO [http-nio-8080-exec-5][GlobalExceptionHandler.java:83] - user_id:不能为null
+2021-09-22 10:05:54,652 DEBUG [http-nio-8080-exec-7][BaseJdbcLogger.java:137] - ==>  Preparing: update t_user SET `user_phone` = ? where user_id = ?
+2021-09-22 10:05:54,653 DEBUG [http-nio-8080-exec-7][BaseJdbcLogger.java:137] - ==> Parameters: 123456789(String), 1(Integer)
+2021-09-22 10:05:54,661 DEBUG [http-nio-8080-exec-7][BaseJdbcLogger.java:137] - <==    Updates: 1
+2021-09-22 10:06:21,527 INFO [SpringContextShutdownHook][HikariDataSource.java:350] - HikariPool-1 - Shutdown initiated...
+2021-09-22 10:06:21,552 INFO [SpringContextShutdownHook][HikariDataSource.java:352] - HikariPool-1 - Shutdown completed.
+2021-09-22 10:06:29,372 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.5.Final
+2021-09-22 10:06:29,465 INFO [main][StartupInfoLogger.java:55] - Starting DemoApplication on JDdeMacBook-Pro.local with PID 15608 (/Users/jd/Documents/GitHub/java_app/api/app/target/classes started by jd in /Users/jd/Documents/GitHub/java_app/api)
+2021-09-22 10:06:29,470 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
+2021-09-22 10:06:31,129 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 8080 (http)
+2021-09-22 10:06:31,140 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-22 10:06:31,141 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2021-09-22 10:06:31,141 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-09-22 10:06:31,348 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2021-09-22 10:06:31,349 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1816 ms
+2021-09-22 10:06:32,304 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-22 10:06:32,340 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 8080 (http) with context path '/app'
+2021-09-22 10:06:32,354 INFO [main][StartupInfoLogger.java:61] - Started DemoApplication in 3.311 seconds (JVM running for 4.926)
+2021-09-22 10:06:56,958 INFO [http-nio-8080-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-22 10:06:56,958 INFO [http-nio-8080-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2021-09-22 10:06:56,972 INFO [http-nio-8080-exec-1][FrameworkServlet.java:547] - Completed initialization in 13 ms
+2021-09-22 10:06:59,594 INFO [http-nio-8080-exec-1][LogFilter.java:37] - 请求地址:/user/update

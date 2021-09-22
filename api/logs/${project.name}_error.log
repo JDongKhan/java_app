@@ -1,0 +1,2 @@
+2021-09-22 11:19:49,882 ERROR [http-nio-8080-exec-2][UserController.java:47] - Result Maps collection does not contain value for com.jd.dao.mapper.LogMapper.logMap
+2021-09-22 11:24:40,594 ERROR [http-nio-8080-exec-1][UserController.java:47] - Result Maps collection does not contain value for com.jd.dao.mapper.UserMapper.userMap
