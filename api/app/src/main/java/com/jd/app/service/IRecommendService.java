@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface IRecommendService {
 
-    List<Recommend>  queryRecommend(Integer user_id) throws Exception;
+    List<Recommend>  queryRecommendList(Integer user_id) throws Exception;
 
 }

@@ -15,6 +15,6 @@ public interface RecommendMapper {
     @Results({
             @Result(property = "good",column = "good_id",one = @One(select = "com.jd.dao.mapper.GoodsMapper.queryGoodById"))
     })
-    public List<Recommend> queryList(Integer user_id) throws Exception;
+    public List<Recommend> queryRecommendList(Integer user_id) throws Exception;
 
 }

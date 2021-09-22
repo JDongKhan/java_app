@@ -14,7 +14,7 @@ public class RecommendServiceImp implements IRecommendService {
     RecommendMapper mapper;
 
     @Override
-    public List<Recommend> queryRecommend(Integer user_id)  throws Exception {
-        return mapper.queryList(user_id);
+    public List<Recommend> queryRecommendList(Integer user_id)  throws Exception {
+        return mapper.queryRecommendList(user_id);
     }
 }

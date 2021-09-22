@@ -1,9 +1,11 @@
 package com.jd.app.controller;
+import com.jd.app.service.IAdService;
 import com.jd.app.service.ICategoryService;
 import com.jd.app.service.IGoodsService;
 import com.jd.app.service.IRecommendService;
 import com.jd.core.annotation.NotLogin;
 import com.jd.core.annotation.UserId;
+import com.jd.dao.beans.Ad;
 import com.jd.dao.beans.Category;
 import com.jd.dao.beans.Recommend;
 import com.jd.dao.beans.User;
@@ -34,7 +36,7 @@ public class IndexController {
     @Resource
     IRecommendService recommendService;
     @Resource
-    IGoodsService goodsService;
+    IAdService adService;
     @Resource
     ICategoryService categoryService;
 
@@ -43,10 +45,12 @@ public class IndexController {
     @ResponseBody
     @NotLogin
     public Map list(@NotNull Integer user_id) throws Exception {
-        List<Recommend> list = recommendService.queryRecommend(user_id);
+        List<Ad> adList = adService.queryAdList();
+        List<Recommend> recommendList = recommendService.queryRecommendList(user_id);
         List<Category> categoryList = categoryService.queryL1Category();
         Map map = new HashMap();
-        map.put("recommends",list);
+        map.put("ads",adList);
+        map.put("recommends",recommendList);
         map.put("categorys",categoryList);
         return ResponseUtil.ok(map);
     }
