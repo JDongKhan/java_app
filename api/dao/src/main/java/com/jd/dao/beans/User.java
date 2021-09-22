@@ -3,7 +3,7 @@ package com.jd.dao.beans;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class UserBean implements Serializable {
+public class User implements Serializable {
 
     private static final long serialVersionUID = -2682305557890221059L;
     private Integer user_id;
@@ -16,11 +16,11 @@ public class UserBean implements Serializable {
     private String user_flag_string;
     private LocalDateTime last_login_time;
 
-    public UserBean() {
+    public User() {
         super();
     }
 
-    public UserBean(Integer id, String username, String password, String account) {
+    public User(Integer id, String username, String password, String account) {
         super();
         this.user_id = id;
         this.user_name = username;

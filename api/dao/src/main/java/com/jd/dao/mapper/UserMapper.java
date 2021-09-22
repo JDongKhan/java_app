@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 
-import com.jd.dao.beans.UserBean;
+import com.jd.dao.beans.User;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Options;
@@ -35,7 +35,7 @@ public interface UserMapper {
             @Result(property = "user_account", column = "user_account", javaType = String.class),
             @Result(property = "isAdmin", column = "isAdmin", javaType = Integer.class)
     })
-    public UserBean login(@Param("ua") String userAccount, @Param("pw") String password) throws Exception;
+    public User login(@Param("ua") String userAccount, @Param("pw") String password) throws Exception;
 
 
     /**
@@ -47,7 +47,7 @@ public interface UserMapper {
      */
     @Insert("insert into t_user (user_account,user_name,user_password,user_phone) value (#{user.user_account},#{user.user_name},#{user.user_password},#{user.user_phone})")
     @Options(useGeneratedKeys = true, keyProperty = "user.user_id")
-    public int insertUser(@Param("user") UserBean user) throws Exception;
+    public int insertUser(@Param("user") User user) throws Exception;
 
 
     /**
@@ -58,7 +58,7 @@ public interface UserMapper {
      * @return
      * @throws Exception
      */
-    public int updateUser(UserBean user) throws Exception;
+    public int updateUser(User user) throws Exception;
 
     /**
      * 删除用户
@@ -87,7 +87,7 @@ public interface UserMapper {
             @Result(property = "user_password", column = "user_password", javaType = String.class),
             @Result(property = "user_account", column = "user_account", javaType = String.class)
     })
-    public UserBean queryByAccount(@Param("ua") String user_account) throws Exception;
+    public User queryByAccount(@Param("ua") String user_account) throws Exception;
 
     /**
      * 根据ID查询用户
@@ -105,7 +105,7 @@ public interface UserMapper {
             @Result(property = "user_password", column = "user_password", javaType = String.class),
             @Result(property = "user_account", column = "user_account", javaType = String.class)
     })
-    public UserBean queryUserById(int id) throws Exception;
+    public User queryUserById(int id) throws Exception;
 
     /**
      * 查询所有用户
@@ -116,7 +116,7 @@ public interface UserMapper {
 
     @Select(" select * from t_user")
     @ResultMap("userMap")
-    public List<UserBean> queryAllUser() throws Exception;
+    public List<User> queryAllUser() throws Exception;
 
 
     /**
@@ -126,7 +126,7 @@ public interface UserMapper {
      * @return
      * @throws Exception
      */
-    public int batchInsertUser(@Param("users") List<UserBean> user) throws Exception;
+    public int batchInsertUser(@Param("users") List<User> user) throws Exception;
 
     /**
      * 整体删除一组用户
@@ -145,7 +145,7 @@ public interface UserMapper {
      * @return
      * @throws Exception
      */
-    public List<UserBean> pagerUser(Map<String, Object> parmas) throws Exception;
+    public List<User> pagerUser(Map<String, Object> parmas) throws Exception;
 
     /**
      * 查询用户

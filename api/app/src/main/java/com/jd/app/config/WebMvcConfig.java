@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
-import com.jd.dao.beans.UserBean;
+import com.jd.dao.beans.User;
 import com.jd.core.annotation.UserId;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.MethodParameter;
@@ -128,7 +128,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
             if (user == null) {
                 return 0;
             }
-            UserBean userBean = (UserBean)user;
+            User userBean = (User)user;
             return userBean.getUser_id();
         }
     }

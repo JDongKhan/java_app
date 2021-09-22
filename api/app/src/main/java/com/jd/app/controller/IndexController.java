@@ -1,7 +1,7 @@
 package com.jd.app.controller;
 import com.jd.core.annotation.NotLogin;
 import com.jd.core.annotation.UserId;
-import com.jd.dao.beans.UserBean;
+import com.jd.dao.beans.User;
 import com.jd.core.utils.ResponseUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -41,10 +41,10 @@ public class IndexController {
     @RequestMapping(value = "/hello")
     public ModelAndView allLog(HttpServletRequest request) {
         List userList = new ArrayList();
-        UserBean user1 = new UserBean();
+        User user1 = new User();
         user1.setUser_id(10);
         user1.setUser_name("JD1");
-        UserBean user2 = new UserBean();
+        User user2 = new User();
         user2.setUser_id(20);
         user2.setUser_name("JD2");
         userList.add(user1);

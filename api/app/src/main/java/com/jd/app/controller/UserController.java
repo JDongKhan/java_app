@@ -6,7 +6,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.jd.app.service.IUserService;
-import com.jd.dao.beans.UserBean;
+import com.jd.dao.beans.User;
 import com.jd.core.utils.StringUtils;
 import com.jd.core.utils.ResponseUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -40,7 +40,7 @@ public class UserController  {
     @ResponseBody
     public Map login(HttpServletRequest request, HttpServletResponse response, @NotNull String user_account, @NotNull String user_password) {
         log.info("user_account = " + user_account + "; user_password = " + user_password);
-        UserBean u = null;
+        User u = null;
         try {
             u = userServiceImpl.login(user_account, user_password);
         } catch (Exception e) {
@@ -55,12 +55,12 @@ public class UserController  {
             cookie.setHttpOnly(true);
             response.addCookie(cookie);
             request.getSession().setAttribute("user", u);
-            UserBean userBean = new UserBean();
-            userBean.setUser_id(userBean.getUser_id());
+            User user = new User();
+            user.setUser_id(user.getUser_id());
             //更新登录时间
-            userBean.setLast_login_time(LocalDateTime.now());
+            user.setLast_login_time(LocalDateTime.now());
             try {
-                userServiceImpl.updateUser(userBean);
+                userServiceImpl.updateUser(user);
             } catch (Exception e) {
                 log.error(e.getMessage());
             }
@@ -79,12 +79,12 @@ public class UserController  {
                                String user_phone) {
         try {
 
-            UserBean tmp = userServiceImpl.queryUserByAccount(user_account);
+            User tmp = userServiceImpl.queryUserByAccount(user_account);
             if (tmp != null) {
                 return ResponseUtil.fail("您的账号已被注册！");
             }
 
-            UserBean user = new UserBean();
+            User user = new User();
             user.setUser_account(user_account);
             user.setUser_name(user_name);
             user.setUser_password(user_password);
@@ -109,7 +109,7 @@ public class UserController  {
     @ResponseBody
     public Map userList() {
         try {
-            List<UserBean> users = userServiceImpl.queryAllUser();
+            List<User> users = userServiceImpl.queryAllUser();
             return ResponseUtil.ok(users);
         } catch (Exception e) {
             e.printStackTrace();
@@ -123,7 +123,7 @@ public class UserController  {
     @ResponseBody
     public Map userByID(@NotNull Integer user_id) {
         try {
-            UserBean user = userServiceImpl.queryUserByID(user_id);
+            User user = userServiceImpl.queryUserByID(user_id);
             return ResponseUtil.ok(user);
         } catch (Exception e) {
             e.printStackTrace();
@@ -139,7 +139,7 @@ public class UserController  {
             if (user_name == null && user_password == null && user_phone == null) {
                 return ResponseUtil.fail("更新失败！(参数缺失)");
             }
-            UserBean user = new UserBean();
+            User user = new User();
             user.setUser_id(Integer.valueOf(user_id));
             user.setUser_name(user_name);
             user.setUser_password(user_password);

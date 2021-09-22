@@ -2,7 +2,7 @@ package com.jd.app.service.impl;
 
 import javax.annotation.Resource;
 
-import com.jd.dao.beans.UserBean;
+import com.jd.dao.beans.User;
 import com.jd.dao.mapper.UserMapper;
 import com.jd.app.service.IUserService;
 import org.springframework.stereotype.Service;
@@ -18,33 +18,33 @@ public class UserServiceImpl implements IUserService {
     private UserMapper um;
 
 
-    public UserBean login(String userAccount, String password)throws Exception {
+    public User login(String userAccount, String password)throws Exception {
         return um.login(userAccount, password);
     }
 
     @Override
     @Transactional(rollbackFor = Exception.class)
-    public int registerAccount(UserBean userBean) throws Exception {
-        return um.insertUser(userBean);
+    public int registerAccount(User user) throws Exception {
+        return um.insertUser(user);
     }
 
     @Override
-    public int updateUser(UserBean userBean) throws Exception {
-        return um.updateUser(userBean);
+    public int updateUser(User user) throws Exception {
+        return um.updateUser(user);
     }
 
     @Override
-    public UserBean queryUserByAccount(String userAccount) throws Exception {
+    public User queryUserByAccount(String userAccount) throws Exception {
         return um.queryByAccount(userAccount);
     }
 
     @Override
-    public UserBean queryUserByID(int user_id) throws Exception {
+    public User queryUserByID(int user_id) throws Exception {
         return um.queryUserById(user_id);
     }
 
     @Override
-    public List<UserBean> queryAllUser() throws Exception {
+    public List<User> queryAllUser() throws Exception {
         return um.queryAllUser();
     }
 
