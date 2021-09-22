@@ -9,6 +9,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/*
+   <columnOverride column="urls" javaType="java.lang.String[]" typeHandler="JsonStringArrayTypeHandler"/>
+ */
 public class JsonStringArrayTypeHandler extends BaseTypeHandler<String[]> {
     private static final ObjectMapper mapper = new ObjectMapper();
 
